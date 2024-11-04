@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="sidebar">
+        <h1>Ocean Explorer</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#marine-life">Marine Life</a>
+            <a href="#conservation">Conservation</a>
+        </nav>
+    </div>
+
     <div class="header">
-        <img src="images/ocean-design.png" alt="Ocean Design" class="ocean-image">
+        <img src="images/logo.png" alt="Logo" class="logo">
         <h1>Welcome to the Ocean World</h1>
     </div>
     
     <div class="content">
-        <section class="info-section">
+        <section id="about" class="info-section">
             <h2>About the Ocean</h2>
             <p>The ocean covers more than 70% of the Earth's surface and is vital for life.</p>
         </section>
         
-        <section class="info-section">
+        <section id="marine-life" class="info-section">
             <h2>Marine Life</h2>
             <p>Home to millions of species, the ocean is a rich ecosystem.</p>
         </section>
         
-        <section class="info-section">
+        <section id="conservation" class="info-section">
             <h2>Conservation</h2>
             <p>Protecting our oceans is essential for a sustainable future.</p>
         </section>
     </div>
     
     <button class="action-button">Click Me</button>
+
+    <div class="waves">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#00796b" fill-opacity="1" d="M0,128L30,144C60,160,120,192,180,202.7C240,213,300,203,360,218.7C420,235,480,277,540,288C600,299,660,277,720,248C780,219,840,192,900,186.7C960,181,1020,197,1080,202.7C1140,208,1200,192,1260,170.7C1320,149,1380,121,1410,107L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320H0Z"></path>
+        </svg>
+    </div>
 
     <script>
         const button = document.querySelector('.action-button');
