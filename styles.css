@@ -40,8 +40,9 @@ body {
 
 .header {
     text-align: left;
-    margin: 20px 0;
+    margin: 20px 20px 20px 0;
     position: relative;
+    width: 100%;
 }
 
 .logo {
