@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    color: #00796b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.ocean-image {
+    width: 150px; /* Adjust size as needed */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.info-section {
+    background-color: #b2ebf2;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.info-section:hover {
+    background-color: #80deea; /* Lighter color on hover */
+}
+
+.action-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.action-button.clicked {
+    transform: scale(0.95);
+}
