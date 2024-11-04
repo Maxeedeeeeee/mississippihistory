@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Design Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/ocean-design.png" alt="Ocean Design" class="ocean-image">
+        <h1>Welcome to the Ocean World</h1>
+    </div>
+    
+    <div class="content">
+        <section class="info-section">
+            <h2>About the Ocean</h2>
+            <p>The ocean covers more than 70% of the Earth's surface and is vital for life.</p>
+        </section>
+        
+        <section class="info-section">
+            <h2>Marine Life</h2>
+            <p>Home to millions of species, the ocean is a rich ecosystem.</p>
+        </section>
+        
+        <section class="info-section">
+            <h2>Conservation</h2>
+            <p>Protecting our oceans is essential for a sustainable future.</p>
+        </section>
+    </div>
+    
+    <button class="action-button">Click Me</button>
+
+    <script>
+        const button = document.querySelector('.action-button');
+        button.addEventListener('click', () => {
+            button.classList.add('clicked');
+            setTimeout(() => {
+                button.classList.remove('clicked');
+            }, 300);
+        });
+    </script>
+</body>
+</html>
